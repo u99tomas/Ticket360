@@ -1,0 +1,7 @@
+{
+  "LoggerSettings": {
+    "AppName": "Ticket360",
+    "WriteToFile": false,
+    "StructuredConsoleLogging": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "DatabaseSettings": {
+    "DBProvider": "postgresql",
+    "ConnectionString": "Host=localhost;Port=5432;Database=Ticket360;Username=postgres;Password=root;Include Error Detail=true"
+  }
+}
