@@ -1,6 +1,6 @@
-﻿namespace Ticket360.Application.Company.Teams;
+﻿using Ticket360.Domain.Company;
 
-using Domain.Company;
+namespace Ticket360.Application.Company.Teams;
 
 public class CreateTeamRequest : IRequest<Guid>
 {
