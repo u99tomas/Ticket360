@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "12e00597-47ae-4da7-b40d-4cbb458d9114",
+		"_postman_id": "23efa0d8-d1f6-46f0-b37d-fae439735b4a",
 		"name": "dotnet.webapi.boilerplate",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30137906"
 	},
 	"item": [
 		{
@@ -655,6 +656,43 @@
 										"v1",
 										"brands",
 										"623e0000-3f5a-3c7c-3452-08d99c27f668"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Teams",
+					"item": [
+						{
+							"name": "create-team",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"A.F\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/brands",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"brands"
 									]
 								}
 							},
