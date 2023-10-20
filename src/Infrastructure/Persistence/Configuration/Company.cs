@@ -9,7 +9,9 @@ public class TeamConfig : IEntityTypeConfiguration<Team>
 {
     public void Configure(EntityTypeBuilder<Team> builder)
     {
-        builder.IsMultiTenant();
+        builder
+            .ToTable("Teams", SchemaNames.Company)
+            .IsMultiTenant();
 
         builder
             .Property(t => t.Name)
