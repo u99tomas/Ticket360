@@ -11,4 +11,12 @@ public class TeamController : VersionedApiController
     {
         return Mediator.Send(request);
     }
+
+    [HttpGet("{id:guid}")]
+    [MustHavePermission(FSHAction.View, FSHResource.Teams)]
+    [OpenApiOperation("Get team details.", "")]
+    public Task<TeamDto> GetAsync(Guid id)
+    {
+        return Mediator.Send(new GetTeamRequest(id));
+    }
 }
