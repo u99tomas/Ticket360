@@ -66,8 +66,8 @@ public static class FSHPermissions
         new("Create Tenants", FSHAction.Create, FSHResource.Tenants, IsRoot: true),
         new("Update Tenants", FSHAction.Update, FSHResource.Tenants, IsRoot: true),
         new("Upgrade Tenant Subscription", FSHAction.UpgradeSubscription, FSHResource.Tenants, IsRoot: true),
-        new("View Teams", FSHAction.View, FSHResource.Teams, IsBasic: true)
-        new("Create Teams", FSHAction.Create, FSHResource.Teams),
+        new("View Teams", FSHAction.View, FSHResource.Teams, IsBasic: true),
+        new("Create Teams", FSHAction.Create, FSHResource.Teams)
     };
 
     public static IReadOnlyList<FSHPermission> All { get; } = new ReadOnlyCollection<FSHPermission>(_all);
