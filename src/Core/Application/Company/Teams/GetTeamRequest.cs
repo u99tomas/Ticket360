@@ -9,12 +9,6 @@ public class GetTeamRequest : IRequest<TeamDto>
     public GetTeamRequest(Guid id) => Id = id;
 }
 
-public class TeamByIdSpec : Specification<Team, TeamDto>, ISingleResultSpecification
-{
-    public TeamByIdSpec(Guid id) =>
-        Query.Where(p => p.Id == id);
-}
-
 public class GetTeamRequestHandler : IRequestHandler<GetTeamRequest, TeamDto>
 {
     private readonly IRepository<Team> _repository;
