@@ -14,7 +14,8 @@ public class GetTeamRequestHandler : IRequestHandler<GetTeamRequest, TeamDto>
     private readonly IRepository<Team> _repository;
     private readonly IStringLocalizer _t;
 
-    public GetTeamRequestHandler(IRepository<Team> repository, IStringLocalizer<GetTeamRequestHandler> localizer) => (_repository, _t) = (repository, localizer);
+    public GetTeamRequestHandler(IRepository<Team> repository, IStringLocalizer<GetTeamRequestHandler> localizer) =>
+        (_repository, _t) = (repository, localizer);
 
     public async Task<TeamDto> Handle(GetTeamRequest request, CancellationToken cancellationToken) =>
         await _repository.FirstOrDefaultAsync(
