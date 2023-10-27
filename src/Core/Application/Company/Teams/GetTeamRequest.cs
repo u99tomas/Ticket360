@@ -24,12 +24,7 @@ public class GetTeamRequestHandler : IRequestHandler<GetTeamRequest, TeamDto>
     {
         var team = await _repository.FirstOrDefaultAsync(new TeamByIdSpec(request.Id), cancellationToken);
 
-        if (team == null)
-        {
-            throw new NotFoundException(_t["Team {0} Not Found.", request.Id]);
-        }
-
-        return team;
+        return team ?? throw new NotFoundException(_t["Team {0} Not Found.", request.Id]);
     }
 }
 
