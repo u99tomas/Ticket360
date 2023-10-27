@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "23efa0d8-d1f6-46f0-b37d-fae439735b4a",
+		"_postman_id": "3c9ec3e7-b90f-43a6-ab35-bb98d33636ec",
 		"name": "dotnet.webapi.boilerplate",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30137906"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30579093"
 	},
 	"item": [
 		{
@@ -49,15 +49,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tokens",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tokens"
-							]
-						}
+						"url": "{{url}}/tokens"
 					},
 					"response": []
 				},
@@ -81,15 +73,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/users",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users"
-							]
-						}
+						"url": "{{url}}/users"
 					},
 					"response": []
 				},
@@ -98,15 +82,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/roles",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"roles"
-							]
-						}
+						"url": "{{url}}/roles"
 					},
 					"response": []
 				},
@@ -124,15 +100,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/roles",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"roles"
-							]
-						}
+						"url": "{{url}}/roles"
 					},
 					"response": []
 				},
@@ -141,16 +109,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/personal/permissions",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"personal",
-								"permissions"
-							]
-						}
+						"url": "{{url}}/personal/permissions"
 					},
 					"response": []
 				},
@@ -159,16 +118,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/personal/profile",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"personal",
-								"profile"
-							]
-						}
+						"url": "{{url}}/personal/profile"
 					},
 					"response": []
 				},
@@ -186,17 +136,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/roles/17c9fb87-a92f-404d-b2e4-30ce88f5f6b6/permissions",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"roles",
-								"17c9fb87-a92f-404d-b2e4-30ce88f5f6b6",
-								"permissions"
-							]
-						}
+						"url": "{{url}}/roles/17c9fb87-a92f-404d-b2e4-30ce88f5f6b6/permissions"
 					},
 					"response": []
 				},
@@ -205,16 +145,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/personal/logs",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"personal",
-								"logs"
-							]
-						}
+						"url": "{{url}}/personal/logs"
 					},
 					"response": []
 				},
@@ -223,13 +154,9 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "",
-									"type": "string"
-								}
-							]
+							"bearer": {
+								"token": ""
+							}
 						},
 						"method": "POST",
 						"header": [
@@ -248,16 +175,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/users/forgot-password",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users",
-								"forgot-password"
-							]
-						}
+						"url": "{{url}}/users/forgot-password"
 					},
 					"response": []
 				},
@@ -281,16 +199,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/users/reset-password",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users",
-								"reset-password"
-							]
-						}
+						"url": "{{url}}/users/reset-password"
 					},
 					"response": []
 				},
@@ -334,16 +243,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tokens/refresh",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tokens",
-								"refresh"
-							]
-						}
+						"url": "{{url}}/tokens/refresh"
 					},
 					"response": []
 				}
@@ -375,17 +275,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/products/search",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"products",
-										"search"
-									]
-								}
+								"url": "{{url}}/v1/products/search"
 							},
 							"response": []
 						},
@@ -403,16 +293,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/products",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"products"
-									]
-								}
+								"url": "{{url}}/v1/products"
 							},
 							"response": []
 						},
@@ -430,17 +311,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/products/623e0000-3f5a-3c7c-0502-08d9b2523534",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"products",
-										"623e0000-3f5a-3c7c-0502-08d9b2523534"
-									]
-								}
+								"url": "{{url}}/v1/products/623e0000-3f5a-3c7c-0502-08d9b2523534"
 							},
 							"response": []
 						},
@@ -449,17 +320,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "{{url}}/v1/products/623e0000-3f5a-3c7c-21ca-08d9ad0bfea3",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"products",
-										"623e0000-3f5a-3c7c-21ca-08d9ad0bfea3"
-									]
-								}
+								"url": "{{url}}/v1/products/623e0000-3f5a-3c7c-21ca-08d9ad0bfea3"
 							},
 							"response": []
 						},
@@ -468,17 +329,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{url}}/v1/products/623e0000-3f5a-3c7c-0502-08d9b2523534",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"products",
-										"623e0000-3f5a-3c7c-0502-08d9b2523534"
-									]
-								}
+								"url": "{{url}}/v1/products/623e0000-3f5a-3c7c-0502-08d9b2523534"
 							},
 							"response": []
 						}
@@ -511,17 +362,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands/search",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands",
-										"search"
-									]
-								}
+								"url": "{{url}}/v1/brands/search"
 							},
 							"response": []
 						},
@@ -545,16 +386,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands"
-									]
-								}
+								"url": "{{url}}/v1/brands"
 							},
 							"response": []
 						},
@@ -572,17 +404,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands/generate-random",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands",
-										"generate-random"
-									]
-								}
+								"url": "{{url}}/v1/brands/generate-random"
 							},
 							"response": []
 						},
@@ -600,17 +422,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands/delete-random",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands",
-										"delete-random"
-									]
-								}
+								"url": "{{url}}/v1/brands/delete-random"
 							},
 							"response": []
 						},
@@ -619,17 +431,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "{{url}}/v1/brands/623e0000-3f5a-3c7c-e7d0-08d9962dbbe4",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands",
-										"623e0000-3f5a-3c7c-e7d0-08d9962dbbe4"
-									]
-								}
+								"url": "{{url}}/v1/brands/623e0000-3f5a-3c7c-e7d0-08d9962dbbe4"
 							},
 							"response": []
 						},
@@ -647,17 +449,16 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands/623e0000-3f5a-3c7c-3452-08d99c27f668",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands",
-										"623e0000-3f5a-3c7c-3452-08d99c27f668"
-									]
-								}
+								"url": "{{url}}/v1/brands/623e0000-3f5a-3c7c-3452-08d99c27f668"
+							},
+							"response": []
+						},
+						{
+							"name": "get-brand-by-id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/v1/brands/a0f36efe-6037-410c-89a9-daa9026d9ce5"
 							},
 							"response": []
 						}
@@ -678,23 +479,23 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"A.F\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Argentina Club V2\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": {
-									"raw": "{{url}}/v1/brands",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"v1",
-										"brands"
-									]
-								}
+								"url": "{{url}}/v1/team"
+							},
+							"response": []
+						},
+						{
+							"name": "get-team-by-id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
 							},
 							"response": []
 						}
@@ -710,16 +511,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/tenants/root",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants",
-								"root"
-							]
-						}
+						"url": "{{url}}/tenants/root"
 					},
 					"response": []
 				},
@@ -728,15 +520,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/tenants",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants"
-							]
-						}
+						"url": "{{url}}/tenants"
 					},
 					"response": []
 				},
@@ -754,15 +538,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tenants",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants"
-							]
-						}
+						"url": "{{url}}/tenants"
 					},
 					"response": []
 				},
@@ -780,16 +556,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tenants/upgrade",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants",
-								"upgrade"
-							]
-						}
+						"url": "{{url}}/tenants/upgrade"
 					},
 					"response": []
 				},
@@ -807,17 +574,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tenants/gamma/activate",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants",
-								"gamma",
-								"activate"
-							]
-						}
+						"url": "{{url}}/tenants/gamma/activate"
 					},
 					"response": []
 				},
@@ -835,17 +592,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/tenants/beta/deactivate",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"tenants",
-								"beta",
-								"deactivate"
-							]
-						}
+						"url": "{{url}}/tenants/beta/deactivate"
 					},
 					"response": []
 				}
@@ -859,15 +606,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/health",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"health"
-							]
-						}
+						"url": "{{url}}/health"
 					},
 					"response": []
 				}
@@ -881,16 +620,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/v1/dashboard",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"v1",
-								"dashboard"
-							]
-						}
+						"url": "{{url}}/v1/dashboard"
 					},
 					"response": []
 				}
@@ -899,13 +629,9 @@
 	],
 	"auth": {
 		"type": "bearer",
-		"bearer": [
-			{
-				"key": "token",
-				"value": "{{token}}",
-				"type": "string"
-			}
-		]
+		"bearer": {
+			"token": "{{token}}"
+		}
 	},
 	"event": [
 		{
