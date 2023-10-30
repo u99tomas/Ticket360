@@ -29,4 +29,5 @@ public class TeamController : VersionedApiController
             ? BadRequest()
             : Ok(await Mediator.Send(request));
     }
+
 }
