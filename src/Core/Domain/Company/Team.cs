@@ -8,5 +8,10 @@ public class Team : AuditableEntity, IAggregateRoot
     {
         Name = name;
     }
-}
 
+    public Team Update(string? name)
+    {
+        if (name is not null && Name?.Equals(name) is not true) Name = name;
+        return this;
+    }
+}
