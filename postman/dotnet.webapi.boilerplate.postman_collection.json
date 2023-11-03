@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3c9ec3e7-b90f-43a6-ab35-bb98d33636ec",
+		"_postman_id": "91638a19-157c-40d6-bd24-d5e91279c8b9",
 		"name": "dotnet.webapi.boilerplate",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "30579093"
@@ -496,6 +496,50 @@
 								"method": "GET",
 								"header": [],
 								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
+							},
+							"response": []
+						},
+						{
+							"name": "search-teams",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"keyword\": \"\",\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"orderBy\": [\n    \"id\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/v1/teams/search"
+							},
+							"response": []
+						},
+						{
+							"name": "update-team",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"f21c3267-67bc-4418-8b06-e14ddbf24871\",\n    \"name\":\"Equipo psicopateado\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
+							},
+							"response": []
+						},
+						{
+							"name": "delete-team",
+							"request": {
+								"method": "DELETE",
+								"header": []
 							},
 							"response": []
 						}

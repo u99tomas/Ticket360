@@ -19,4 +19,12 @@ public class TeamController : VersionedApiController
     {
         return Mediator.Send(new GetTeamRequest(id));
     }
+
+    [HttpDelete("{id:guid}")]
+    [MustHavePermission(FSHAction.Delete, FSHResource.Teams)]
+    [OpenApiOperation("Delete a team.", "")]
+    public Task<Guid> DeleteAsync(Guid id)
+    {
+        return Mediator.Send(new DeleteTeamRequest(id));
+    }
 }
