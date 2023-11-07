@@ -11,7 +11,8 @@ public class Team : AuditableEntity, IAggregateRoot
 
     public Team Update(string? name)
     {
-        if (name is not null && Name?.Equals(name) is not true) Name = name;
+        if (name is null || Name.Equals(name)) return this;
+        Name = name;
         return this;
     }
 }
