@@ -2,7 +2,7 @@
 
 namespace Ticket360.Host.Controllers.Company;
 
-public class TeamController : VersionedApiController
+public class TeamsController : VersionedApiController
 {
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Teams)]

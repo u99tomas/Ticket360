@@ -486,7 +486,7 @@
 										}
 									}
 								},
-								"url": "{{url}}/v1/team"
+								"url": "{{url}}/v1/teams"
 							},
 							"response": []
 						},
@@ -495,7 +495,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
+								"url": "{{url}}/v1/teams/f21c3267-67bc-4418-8b06-e14ddbf24871"
 							},
 							"response": []
 						},
@@ -531,7 +531,7 @@
 										}
 									}
 								},
-								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
+								"url": "{{url}}/v1/teams/f21c3267-67bc-4418-8b06-e14ddbf24871"
 							},
 							"response": []
 						},
@@ -539,7 +539,8 @@
 							"name": "delete-team",
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{url}}/v1/teams/f21c3267-67bc-4418-8b06-e14ddbf24871"
 							},
 							"response": []
 						}
