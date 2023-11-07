@@ -10,7 +10,6 @@ public class UpdateTeamRequest : IRequest<Guid>
 
 public class UpdateTeamRequestHandler : IRequestHandler<UpdateTeamRequest, Guid>
 {
-    // Add Domain Events automatically by using IRepositoryWithEvents
     private readonly IRepositoryWithEvents<Team> _repository;
     private readonly IStringLocalizer _t;
 
