@@ -498,6 +498,24 @@
 								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
 							},
 							"response": []
+						},
+						{
+							"name": "search-teams",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"keyword\": \"\",\n  \"pageNumber\": 0,\n  \"pageSize\": 10,\n  \"orderBy\": [\n    \"id\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/v1/teams/search"
+							},
+							"response": []
 						}
 					]
 				}
