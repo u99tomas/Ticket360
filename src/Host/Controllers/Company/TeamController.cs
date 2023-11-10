@@ -2,7 +2,7 @@
 
 namespace Ticket360.Host.Controllers.Company;
 
-public class TeamController : VersionedApiController
+public class TeamsController : VersionedApiController
 {
     [HttpPost("search")]
     [MustHavePermission(FSHAction.Search, FSHResource.Teams)]
@@ -28,6 +28,14 @@ public class TeamController : VersionedApiController
         return Mediator.Send(new GetTeamRequest(id));
     }
 
+    [HttpDelete("{id:guid}")]
+    [MustHavePermission(FSHAction.Delete, FSHResource.Teams)]
+    [OpenApiOperation("Delete a team.", "")]
+    public Task<Guid> DeleteAsync(Guid id)
+    {
+        return Mediator.Send(new DeleteTeamRequest(id));
+    }
+    
     [HttpPut("{id:guid}")]
     [MustHavePermission(FSHAction.Update, FSHResource.Teams)]
     [OpenApiOperation("Update a team.", "")]
@@ -37,5 +45,4 @@ public class TeamController : VersionedApiController
             ? BadRequest()
             : Ok(await Mediator.Send(request));
     }
-
 }
