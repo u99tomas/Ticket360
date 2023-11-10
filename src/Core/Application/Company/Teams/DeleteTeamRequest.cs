@@ -13,8 +13,8 @@ public class DeleteTeamRequestHandler : IRequestHandler<DeleteTeamRequest, Guid>
     private readonly IRepositoryWithEvents<Team> _repository;
     private readonly IStringLocalizer _t;
 
-    public DeleteTeamRequestHandler(IRepositoryWithEvents<Team> teamRepo, IStringLocalizer<DeleteTeamRequestHandler> localizer) =>
-        (_repository, _t) = (teamRepo, localizer);
+    public DeleteTeamRequestHandler(IRepositoryWithEvents<Team> repository, IStringLocalizer<DeleteTeamRequestHandler> localizer) =>
+        (_repository, _t) = (repository, localizer);
 
     public async Task<Guid> Handle(DeleteTeamRequest request, CancellationToken cancellationToken)
     {
