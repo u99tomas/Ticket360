@@ -27,4 +27,15 @@ public class TeamController : VersionedApiController
     {
         return Mediator.Send(new GetTeamRequest(id));
     }
+
+    [HttpPut("{id:guid}")]
+    [MustHavePermission(FSHAction.Update, FSHResource.Teams)]
+    [OpenApiOperation("Update a team.", "")]
+    public async Task<ActionResult<Guid>> UpdateAsync(UpdateTeamRequest request, Guid id)
+    {
+        return id != request.Id
+            ? BadRequest()
+            : Ok(await Mediator.Send(request));
+    }
+
 }

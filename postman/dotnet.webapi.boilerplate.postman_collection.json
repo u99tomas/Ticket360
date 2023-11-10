@@ -516,6 +516,25 @@
 								"url": "{{url}}/v1/teams/search"
 							},
 							"response": []
+
+						},
+						{
+							"name": "update-team",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"f21c3267-67bc-4418-8b06-e14ddbf24871\",\n    \"name\":\"Equipo psicopateado\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/v1/team/f21c3267-67bc-4418-8b06-e14ddbf24871"
+							},
+							"response": []
 						}
 					]
 				}
