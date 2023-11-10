@@ -4,7 +4,7 @@ namespace Ticket360.Application.Company.Teams;
 
 public class CreateTeamRequest : IRequest<Guid>
 {
-    public string Name { get; set; }
+    public string Name { get; set; } = default!;
 }
 
 public class CreateTeamHandler : IRequestHandler<CreateTeamRequest, Guid>
