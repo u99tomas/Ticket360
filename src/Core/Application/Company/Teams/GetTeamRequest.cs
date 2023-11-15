@@ -23,8 +23,15 @@ public class GetTeamRequestHandler : IRequestHandler<GetTeamRequest, TeamDto>
     public async Task<TeamDto> Handle(GetTeamRequest request, CancellationToken cancellationToken)
     {
         var team = await _repository.FirstOrDefaultAsync(new TeamByIdSpec(request.Id), cancellationToken);
+        var teamValidator = await _repository.GetByIdAsync(request.Id, cancellationToken);
 
-        return team ?? throw new NotFoundException(_t["Team {0} Not Found.", request.Id]);
+        if (teamValidator.DeletedOn != null)
+        {
+            var errorMessage = _t["Team {0} does not exist or was deleted."];
+            throw new NotFoundException(string.Format(errorMessage, request.Id));
+        }
+
+        return team;
     }
 }
 

@@ -6,5 +6,5 @@ public class TeamsBySearchRequestSpec : EntitiesByBaseFilterSpec<Team, TeamDto>
 {
     public TeamsBySearchRequestSpec(SearchTeamsRequest request)
         : base(request) =>
-        Query.OrderBy(c => c.Name, !request.HasOrderBy());
+        Query.Where(team => team.DeletedOn == null).OrderBy(c => c.Name, !request.HasOrderBy());
 }
